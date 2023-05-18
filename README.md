@@ -1,18 +1,22 @@
 # Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+使用 pnpm 操作
 
-## Recommended IDE Setup
+## Git hooks && commitlint
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+拉取代码后先执行 `npx husky install` 初始化 `husky`，激活 git 提交的校验。如果不生效，打开文件夹查看文件类型是不是纯文本格式，如果是纯文本手动改为可运行的脚本格式。
 
-## Type Support For `.vue` Imports in TS
+|   code   |                             desc                              |
+| :------: | :-----------------------------------------------------------: |
+|   feat   |                          添加新功能                           |
+|   fix    |                           修复 bug                            |
+|  style   | 代码格式变动, 不影响代码功能的更改(修改空格/格式化代码等操作) |
+|   pref   |                         优化/性能提升                         |
+|   docs   |                           修改文档                            |
+|   test   |                      新增或修改测试用例                       |
+| refactor |     功能重构，指既不是新增功能，也不是修改 bug 的代码变动     |
+|  chore   |                    更改脚手架配置相关文件                     |
+|  revert  |                           版本回退                            |
+|    ui    |           只更新 css 样式，不涉及任何业务功能的修改           |
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## unocss && sass
